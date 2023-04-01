@@ -1,3 +1,8 @@
 from django.db import models
+from django.forms import FileField
 
-# Create your models here.
+class gujrati_files(models.Model):
+    email = models.EmailField(max_length=254)
+    time = models.CharField(max_length=100)
+    image = models.FileField(upload_to='Uploaded_Data')
+    

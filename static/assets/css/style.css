@@ -2093,7 +2093,8 @@ header.absolute {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #fff;
+  /* background: #fff; */
+  background-color: black;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -2109,10 +2110,11 @@ header.absolute {
   top: 50%;
   left: 50%;
   width: 400px;
-  height: 400px;
+  height: 300px;
   z-index: 100;
   margin: -200px 0 0 -200px;
-  background: #ffffff;
+  /* background: #ffffff; */
+  background-color: black;
   background: url(../icon/preload.png) center center no-repeat;
   animation: preload 1s linear infinite alternate;
   -webkit-animation-name: bounceIn;

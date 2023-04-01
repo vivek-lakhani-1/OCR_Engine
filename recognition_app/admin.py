@@ -1,3 +1,3 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import gujrati_files
+admin.site.register(gujrati_files)
