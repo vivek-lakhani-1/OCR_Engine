@@ -2106,13 +2106,13 @@ header.absolute {
 }
 
 .preload-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  height: 300px;
+  
+  width: 600px;
+padding-top: 50%;
+  height: 600px;
+
   z-index: 100;
-  margin: -200px 0 0 -200px;
+ margin: 0 auto;
   /* background: #ffffff; */
   background-color: black;
   background: url(../icon/preload.png) center center no-repeat;

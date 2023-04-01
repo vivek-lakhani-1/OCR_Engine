@@ -1,6 +1,0 @@
-In this example, we create a `Languagechain` object that supports English, Spanish, French,
-and Chinese languages. We then enter a loop that repeatedly prompts the user for input
-and translates their input using the `LanguageChain` object. If the user types "quit", the loop
-is exited and the program ends.
-Note that you will need to include the `langchain` crate in your `cargo.toml` file to use this
-code.

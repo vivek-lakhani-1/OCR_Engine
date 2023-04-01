@@ -15,7 +15,7 @@ import shutil
 
 
 
-# ,poppler_path=r'C:\Program Files\poppler-22.04.0\Library\bin'
+poppler_path=r'C:\Program Files\poppler-22.04.0\Library\bin'
 
 
 def scanhompage(request):
@@ -157,75 +157,77 @@ def recogntion(request):
         # tex= tex + pytesseract.image_to_string(Image.open(f'Uploaded_Data/{filename2}'),lang='guj')
         API_KEY = "AIzaSyB8gm7-cGZVBwxDYcCORBvYfWXn3o4quOo"
     
-    VISION_URL = "https://vision.googleapis.com/v1/images:annotate?key=" + API_KEY
+        VISION_URL = "https://vision.googleapis.com/v1/images:annotate?key=" + API_KEY
 
-    # The image you want to analyze
-    image_path = f'Uploaded_Data/{filename2}'
+        # The image you want to analyze
+        image_path = f'Uploaded_Data/{filename2}'
 
-    # Read the image and convert it to base64
-    with open(image_path, "rb") as image_file:
-        image_base64 = base64.b64encode(image_file.read()).decode("utf-8")
+        # Read the image and convert it to base64
+        with open(image_path, "rb") as image_file:
+              image_base64 = base64.b64encode(image_file.read()).decode("utf-8")
 
-    # The request body for the Vision API
-    request_body = {
-        "requests": [
-            {
-                "image": {
-                    "content": image_base64
-                },
-                "features": [
-                    {
-                        "type": "LABEL_DETECTION"
+        # The request body for the Vision API
+        request_body = {
+            "requests": [
+                {
+                    "image": {
+                        "content": image_base64
                     },
-                    {
-                        "type": "DOCUMENT_TEXT_DETECTION"
-                    }
-                ]
-            }
-        ]
-    }
+                    "features": [
+                        {
+                            "type": "LABEL_DETECTION"
+                        },
+                        {
+                            "type": "DOCUMENT_TEXT_DETECTION"
+                        }
+                    ]
+                }
+            ]
+        }
 
 
-    response = requests.post(VISION_URL, json=request_body)
+        response = requests.post(VISION_URL, json=request_body)
 
-    tex = response.json()['responses'][0]['fullTextAnnotation']['text']
-    request.session['key2'] = tex
-    print(tex)
+        tex = response.json()['responses'][0]['fullTextAnnotation']['text']
+        request.session['key2'] = tex
+        print(tex)
 
-    # return tex
-  
+        # return tex
     
-    if(os.path.exists('result/pdf')):
-        location = save_file(filename,extension,tex)
-    
-            
-    else:
-        parent='result/'
-        i_dir = 'img'
-        p_dir = 'pdf'
-        img_dir = os.path.join(parent,i_dir)
-        pdf_dir = os.path.join(parent,p_dir)
-        os.mkdir('result')
-        os.mkdir(img_dir)
-        os.mkdir(pdf_dir)
-        location = save_file(filename,extension,tex)
         
-    text_frontend.update({'text':tex,
-                          'location':location})
-    
-    old_path = f'Uploaded_Data/{filename2}'
-    
-    if(os.path.exists(f'history/{filename2}')):
-        os.remove(f'history/{filename2}')
+    if(os.path.exists('result/pdf')):
+            location = save_file(filename,extension,tex)
+        
+                
     else:
-       pass
-    new_path='history/'
-    shutil.move(old_path, new_path)
+            parent='result/'
+            i_dir = 'img'
+            p_dir = 'pdf'
+            img_dir = os.path.join(parent,i_dir)
+            pdf_dir = os.path.join(parent,p_dir)
+            os.mkdir('result')
+            os.mkdir(img_dir)
+            os.mkdir(pdf_dir)
+            location = save_file(filename,extension,tex)
+            
     
-    
-    tts = gTTS(text=tex, lang='en-uk')
-    tts.save("static/assets/Audio/output.mp3")
-    os.system("mpg123 output.mp3")
+        
+            old_path = f'Uploaded_Data/{filename2}'
+        
+            if(os.path.exists(f'history/{filename2}')):
+                os.remove(f'history/{filename2}')
+            else:
+                pass
+            new_path='history/'
+            shutil.move(old_path, new_path)
+            
+            
+            tts = gTTS(text=tex, lang='en-uk')
+            tts.save("static/assets/Audio/output.mp3")
+            os.system("mpg123 output.mp3")
+            
+    text_frontend.update({'text':tex,
+                            'location':location})
 
     return render(request,'result.html',text_frontend)
-    
+        

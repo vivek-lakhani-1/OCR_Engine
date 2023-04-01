@@ -1,0 +1,1544 @@
+Aim: Design a SWH system and assess the annual energy saved for a varying
+water demand of 50 1/day to 300 1/day (interval of 50 I) for a single collector costing
+Rs. 160000 (2000$) for location as discussed during the session. Calculate the LCOE
+and Capacity factor for varying water demand and plot the results (w.r.t. varying
+water demand). Working fluid is water. Discuss the trends of LCOE, Capacity factor
+and annual energy saved as a function of water demand. Also, compare how these
+performance indexes change when the number of collector is increased to 2 (for
+water demand = 300 1/day). Attach the screenshots of each step in your report and
+present a good discussion of the results.
+Select the Solar Water Heating and then select LCOE
+Calculator (FCR Method)
+SAM 2022.11.21
+Choose a performance model, and then choose from the available financial models.
+> Photovoltaic
+> Distributed
+Energy Storage
+› Concentrating Solar Power
+> Marine Energy
+Wind
+Fuel Cell - PV - Battery
+Geothermal
+Solar Water Heating
+Biomass Combustion
+Generic System
+Help
+17
+LCOE Calculator (FCR Method)
+No Financial Model
+OK CancelSAM 2022.11.21
+File ✓
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
++ Add untitled ✓
+Simulate >
+Parametrics
+P50 / P90
+Stochastic
+Macros
+Solar Water Heating
+Financial Parameters
+Simulate >
+Parametrics
+P50 / P90
+Select the city in the next step
+Stochastic
+Macros
+Solar Resource Library-
+The Solar Resource library is a list of weather files on your computer. Choose a file from the library and verify the weather data information below.
+The default library comes with only a few weather files to help you get started. Use the download tools below to build a library of locations you frequently model. Once you build
+your library, it is available for all of your work in SAM.
+Filter:
+Name
+Latitude Longitude Time zone Elevation Station ID Source
+araria_26.1329_87.457_suny-india-tmy_60_tmy
+26.15 87.45 5.5
+67531
+chennai_13.0838_80.2826_suny-india-tmy_60_tmy 13.05 80.25 5.5
+43640
+lucknow_26.8547_80.9214_suny-india-tmy_60_tmy 26.85 80.95
+5.5
+46088
+shimla 31.1033_77.1584_suny-india-tmy_60_tmy 31.15 77.15
+5.5
+33591
+varanasi_25.3329_82.9966_suny-india-tmy_60_tmy 25.35 82.95
+5.5
+NSRDB
+NSRDB
+NSRDB
+NSRDB
+52673
+NSRDB
+SAM scans the following folders on your computer for valid weather files and adds them to your Solar Resource library. To use weather files stored on your computer, click
+Add/remove Weather File Folders and add folders containing valid weather files.
+C:\Users\adars/SAM Downloaded Weather Files
+Weather Data Information
+One location
+Multiple locations
+Type a location name, street address, or lat,lon in decimal degrees Default TMY file
+For locations not covered by the NSRDB, visit the SAM website Weather Page for links to other data sources.
+Download Weather Files-
+The NSRDB is a database of thousands of weather files that you can download and add to your to your solar resource library: Download a default typical-year (TMY) file for most
+long-term cash flow analyses, or choose files to download for single-year or P50/P90 analyses. See Help for details.
+Latitude
+Longitude
+Time zone
+Hot Water Draw
+System
+Name
+-Shading-
+The following information describes the data in the highlighted weather file from the Solar Resource library above. This is the file
+SAM will use when you click Simulate.
+Weather file C:\Users\adars\SAM Downloaded Weather Files\varanasi_25.3329_82.9966_suny-india-tmy_60_tmy.csv
+-Header Data from Weather File-
+Collector
+GMT 5.5
+Shading losses
+25.35 degrees
+82.95 degrees
+Select the Average daily hot water usage (50L)
+Solar water, LCOE Calculator
+Location and Resource
+Hourly hot water draw profile
+Total annual hot water draw
+Number of collectors
+Filter:
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+11-1:-....-
+Edit shading...
+C-L: 110.013
+Tilt
+Azimuth
+Working fluid Water
+Enter user-defined parameters
+Choose from library
+Location 52673
+Data Source NSRDB
+Name
+0
+0
+Edit array...
+kg/hr
+18250 kg/year
+0
+0
+30 deg
+180 deg
+1
+Open 3D shade calculator...
+18
+For NSRDB data, the latitude and longitude shown here from the weather file header are the coordinates
+Add/remove weather file folders...
+Total system collector area
+Rated system size
+Advanced download
+Scale draw profile to average daily usage ✓
+Average daily hot water usage
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+User-defined collector-
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+200703D
+Download and add to library...
+-System Availability-
+Refresh library
+Collector area
+FRta
+FRUL
+Cla--DI-+-
+0.2 0..1
+2.98 m2
+1.709 kW
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+IAM coefficient
+Test fluid Water
+Test flow
+View data...
+0
+2.98 m2
+0.689
+3.85 W/m2.C
+0.2
+0.045528 kg/s
+Area IAM FRta FRUL Test Fluid Te
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+0.0
+0.(
+0
+0
+0.0
+0.(
+Glazed Flat-Plate 2.49 -0.... 0.725 3.24
+Glazed Flat-Plate 2.5 0.09 0.719 5.31 0
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+Glazed Flat-Plate 1.52
+0.0
+0.09 0.719 5.31 0
+0.09 0.719 5.31
+0
+0.(
+-0.... 0.713 3.38 0
+0.(
+0711
+50 kg/day
+ากา
+01SAM 2022.11.21
+File ✓ + Add
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
+untitled
+Parametrics
+P50 / P90
+Stochastic
+Macros
+Hour
+O
+in
+5
+10
+Finance Parameter
+15
+LCOE Calculator
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+20
+Capital and Operating Costs-
+Metric
+Value
+Annual AC energy saved (year 1) 367 kWh
+Solar fraction (year 1)
+0.71
+Aux with solar (year 1)
+14.7 kWh
+515.4 kWh
+Aux without solar (year 1)
+Capacity factor (year 1)
+LCOE Levelized cost of energy
+2.5%
+114.57 €/kWh
+Capital cost
+Fixed operating cost (annual)
+-Financial Assumptions-
+-Reference Values-
+O Enter fixed charge rate
+Fixed charge rate (real)
+50
+Enter costs in $
+1.00
+Variable operating cost
+kWh
+100
+Capital recovery factor (CRF)
+Project financing factor (PFF)
+Construction financing factor (CFF)
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+40
+System capacity
+0.098
+30
+20
+0.00
+10
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule
+Annual cost during construction sched
+Value
+Sched
+Value
+Nominal construction interest rate
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF / CDF
+0.083
+150
+O Calculate fixed charge rate
+Analysis period
+20 years
+Inflation rate
+2.5 %/year
+13 %/year
+60% of capital cost
+4 %/year
+28 %/year
+1.127
+1.024
+1.709 kW
+Enter costs in $/kW
+2,000.00
+0.0000 $/kWh
+Output
+Annual AC energy in Year 1 (kW)
+Day
+200
+50.00
+Jan Feb Mar
+19
+% of capital cost
+100% of capital cost
+3.5 %/year
+250
+Edit...
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+Monthly AC Energy in Year 1
+Apr May Jun
+300
+Jul
+0.098
+FCR CRF PFF CFF (see below)
+350
+Fixed charge rate (FCR)
+3,418.06 $
+85.45 $
+0.00 $/kWh
+0.054
+Aug Sep Oct Nov
+0.162755
+0.143075
+0.123395
+0.103715
+0.0840344
+0.0643542
+0.044674
+0.0249938
+0.00531367
+-0.0143665
+-0.0340467
+DecSelect the Average daily hot water usage (100L)
++ Add untitled
+File V
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
+Parametrics
+P50 / P90
+SAM 2022.11.21
+Stochastic
+Macros
+File ✓ + Add untitled
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
+Parametrics
+P50 / P90
+Stochastic
+Macros
+Hot Water Draw
+System
+-Shading-
+Hourly hot water draw profile
+Total annual hot water draw
+Collector-
+Shading losses
+Number of collectors
+Enter user-defined parameters
+Choose from library
+Filter:
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+Halindung Inc Cobi 110012
+Azimuth
+Working fluid Water
+Edit shading...
+Tilt
+-Financial Assumptions-
+-Reference Values-
+Name
+Capital cost
+Fixed operating cost (annual)
+Edit array...
+O Enter fixed charge rate
+Fixed charge rate (real)
+Enter costs in $
+1.00
+0.098
+kg/hr
+18250 kg/year
+Variable operating cost
+30 deg
+180 deg
+0.00
+System capacity
+1
+Open 3D shade calculator...
+Finance Parameter
+0.083
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule
+Annual cost during construction
+Nominal construction interest rate
+1.127
+0.0000 $/kWh
+Capital recovery factor (CRF)
+Project financing factor (PFF)
+Construction financing factor (CFF)
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+1.024
+20
+Scale draw profile to average daily usage
+Average daily hot water usage
+Total system collector area
+Rated system size
+1.709 kW
+Enter costs in $/kW
+2,000.00
+50.00
+Value
+Sched
+Value
+Sched
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+200702ED
+rUser-defined collector-
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+LCOE Calculator-
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+-Capital and Operating Costs-
+Calculate fixed charge rate
+Analysis period
+20 years
+Inflation rate
+2.5 %/year
+13 %/year
+60% of capital cost
+4 %/year
+28
+%/year
+% of capital cost
+100 % of capital cost
+3.5 %/year
+-System Availability-
+Edit...
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+Collector area
+FRta
+FRUL
+IAM coefficient
+Test fluid Water
+Test flow
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 2.49
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+Glazed Flat-Plate 1.52
+0.2 0..1
+2.98 m2
+1.709 kW
+Clased Flat Diata 272
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+0
+2.98 m2
+0.689
+0.(
+0.(
+Area IAM FRta FRUL Test Fluid Te
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4 0
+-0.... 0.725 3.24 0
+0.09 0.719 5.31 0
+0.09 0.719 5.31 0
+0.09 0.719 5.31 0
+-0.... 0.713 3.38 0
+0.(
+0.(
+0.(
+0.0
+0.(
+3.85 W/m2.C
+0.2
+0.045528 kg/s
+100 kg/day
+0711 202
+3,418.06 $
+85.45 $
+0.00 $/kWh
+0.054
+Fixed charge rate (FCR)
+0.098
+FCR = CRF PFF CFF (see below)
+२Output
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF / CDF
+Metric
+Value
+Annual AC energy saved (year 1) 816 kWh
+Solar fraction (year 1)
+0.79
+73.0 kWh
+1,030.9 kWh
+5.5%
+51.52 €/kWh
+Aux with solar (year 1)
+Aux without solar (year 1)
+Capacity factor (year 1)
+LCOE Levelized cost of energy
+5T
+10
+15
+20
+50
+A
+kWh
+100
+80
+60
+40
+20
+0
+Annual AC energy in Year 1 (kW)
+Day
+150
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+200
+Monthly AC Energy in Year 1
+21
+250
+300
+350
+0.323883
+0.288494
+0.253105
+0.217717
+0.182328
+0.146939
+0.111551
+0.0761619
+0.0407732
+0.00538455
+-0.0300042Select the Average daily hot water usage (150L)
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate>
+Parametrics Stochastic
+P50 / P90
+Macros
+SAM 2022.11.21
+File ✓ Add untitled
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
+Parametrics
+P50 / P90
+Stochastic
+Macros
+Hot Water Draw
+System
+-Shading-
+Collector
+Hourly hot water draw profile
+Edit array... kg/hr
+Total annual hot water draw 54750.000000000 kg/year
+Filter:
+Shading losses
+Number of collectors
+Enter user-defined parameters
+Choose from library
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+11-1:-.....
+C-L: 110.013
+Azimuth
+Working fluid Water
+Edit shading...
+-Financial Assumptions-
+Tilt
+Name
+-Capital and Operating Costs-
+Capital cost
+Fixed operating cost (annual)
+-Reference Values-
+Fixed charge rate (real)
+<
+Enter fixed charge rate
+Enter costs in $
+1.00
+Variable operating cost
+0.098
+30 deg
+180 deg
+Finance Parameter
+0.00
+1
+System capacity
+Open 3D shade calculator...
+0.083
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule
+Annual cost during construction
+Nominal construction interest rate
+1.127
+Capital recovery factor (CRF)
+Project financing factor (PFF)
+Construction financing factor (CFF)
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+0.0000 $/kWh
+1.024
+22
+50.00
+Total system collector area
+Rated system size
+1.709 kW
+Enter costs in $/kW
+2,000.00
+LCOE Calculator
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+Value
+Sched
+Scale draw profile to average daily usage
+Average daily hot water usage
+200703
+Value
+Sched
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+User-defined collector-
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+-System Availability-
+Calculate fixed charge rate
+Analysis period
+20 years
+Inflation rate
+2.5 %/year
+13 %/year
+60% of capital cost
+4 %/year
+28
+%/year
+% of capital cost
+100 % of capital cost
+3.5 %/year
+Edit...
+Cl---L
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+Collector area
+FRta
+FRUL
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+0.2 0..1
+2.98 m2
+1.709 kW
+IAM coefficient
+Test fluid Water
+Test flow
+0.(
+0.(
+0
+0
+0.0
+Area IAM FRta FRUL Test Fluid Te
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4
+-0.... 0.725 3.24
+0.09 0.719 5.31
+0.09 0.719 5.31 0
+0.09 0.719 5.31 0
+Glazed Flat-Plate 1.52 -0.... 0.713 3.38 0
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 2.49
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+0
+0.(
+0.(
+0.(
+0.(
+DI-+-
+272
+0
+2.98 m2
+0.045528 kg/s
+0711
+3,418.06 $
+85.45 $
+0.00 $/kWh
+0.054
+0.689
+3.85 W/m2.C
+0.2
+Fixed charge rate (FCR)
+150 kg/day
+.
+202
+0.098
+FCR = CRF PFF CFF (see below)
+01Output:
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF/CDF
+Metric
+Value
+Annual AC energy saved (year 1) 1,197 kWh
+Solar fraction (year 1)
+0.77
+Aux with solar (year 1)
+202.4 kWh
+1,546.3 kWh
+Aux without solar (year 1)
+8.0%
+35.13 €/kWh
+Capacity factor (year 1)
+LCOE Levelized cost of energy
+0
+5
+10
+15
+20
+50
+kWh
+100
+140
+120
+100
+80
+60
+40
+20
+0
+Annual AC energy in Year 1 (kW)
+Day
+150
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+200
+Monthly AC Energy in Year 1
+23
+250
+300
+350
+0.485824
+0.434375
+0.382926
+0.331477
+0.280028
+0.228579
+0.17713
+0.125681
+0.0742318
+0.0227827
+-0.0286663Select the Average daily hot water usage (200L)
+Add untitled
+File ✓
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate>
+Parametrics
+P50 / P90
+SAM 2022.11.21
+Stochastic
+Macros
+Add untitled
+File ✓
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate>
+Parametrics
+P50 / P90
+Stochastic
+Macros
+Hot Water Draw
+System
+-Shading-
+Collector
+Hourly hot water draw profile
+Edit array... kg/hr
+Total annual hot water draw 54750.000000000 kg/year
+Shading losses
+Number of collectors
+Enter user-defined parameters
+Choose from library
+Filter:
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+Heliodune Inc Cobi 110.012
+Azimuth
+Working fluid Water
+Edit shading...
+-Capital and Operating Costs-
+-Financial Assumptions-
+Tilt
+Name
+Capital cost
+Fixed operating cost (annual)
+-Reference Values-
+Fixed charge rate (real)
+Enter fixed charge rate
+Enter costs in $
+1.00
+Variable operating cost
+30 deg
+180 deg
+Finance Parameter
+0.098
+0.00
+System capacity
+Open 3D shade calculator...
+1
+0.083
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule
+Annual cost during construction
+Nominal construction interest rate
+1.127
+0.0000 $/kWh
+Capital recovery factor (CRF)
+Project financing factor (PFF)
+Construction financing factor (CFF)
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+1.024
+24
+Scale draw profile to average daily usage ✓
+Average daily hot water usage
+Total system collector area
+Rated system size
+1.709 kW
+Enter costs in $/kW
+2,000.00
+50.00
+Value
+Sched
+LCOE Calculator
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+Calculate fixed charge rate
+Analysis period
+20 years
+Inflation rate
+2.5 %/year
+13 %/year
+Value
+Sched
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+2007026D
+User-defined collector-
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+-System Availability
+Edit...
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 2.49
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+Glazed Flat-Plate 1.52
+Clased Flat Plato
+Collector area
+FRta
+FRUL
+IAM coefficient
+Test fluid Water
+Test flow
+0.2 0..1
+2.98 m2
+1.709 kW
+60% of capital cost
+4 %/year
+28 %/year
+% of capital cost
+100 % of capital cost
+3.5 %/year
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+Area IAM FRta
+D
+0.045528 kg/s
+=
+2.98 m2
+0.689
+3.85 W/m2.C
+0.2
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4 0
+-0.... 0.725 3.24 0
+0.09 0.719 5.31
+0.09 0.719 5.31
+0.09 0.719 5.31 0
+-0.... 0.713 3.38 0
+0
+0
+200 kg/day
+0711 2.02
+Fixed charge rate (FCR)
+3,418.06 $
+85.45 $
+0.00 $/kWh
+0.054
+FRUL Test Fluid Te
+0.(
+0.(
+0.(
+0.(
+0.(
+0.(
+0.0
+0.098
+FCR CRF PFF CFF (see below)
+.
+aOutput
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF / CDF
+Metric
+Value
+Annual AC energy saved (year 1) 1,506 kWh
+Solar fraction (year 1)
+0.73
+Aux with solar (year 1)
+402.7 kWh
+Aux without solar (year 1)
+2,061.8 kWh
+Capacity factor (year 1)
+10.1%
+LCOE Levelized cost of energy
+27.91 €/kWh
+0
+5
+10
+15
+20
+50
+kWh
+100
+150
+100
+50
+0
+Annual AC energy in Year 1 (kW)
+Day
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+System energy
+150
+200
+Monthly AC Energy in Year 1
+25
+250
+300
+350
+0.647766
+0.57983
+0.511894
+0.443958
+0.376023
+0.308087
+0.240151
+0.172215
+0.10428
+0.0363437
+-0.031592Select the Average daily hot water usage (250L)
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
+Parametrics
+P50 / P90
+Stochastic
+Macros
+SAM 2022.11.21
+Simulate >
+Parametrics
+P50 / P90
+Hot Water Draw
+Stochastic
+Macros
+System
+-Shading-
+Collector
+File ✓ Add untitled ✓
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Filter:
+Hourly hot water draw profile
+Total annual hot water draw
+Shading losses
+Number of collectors
+Enter user-defined parameters
+O Choose from library
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+Holiadung loc Cobi 110.012
+Azimuth
+Working fluid Water
+Edit shading...
+Name
+-Financial Assumptions-
+Tilt
+-Capital and Operating Costs-
+Capital cost
+Fixed operating cost (annual)
+-Reference Values-
+Edit array...
+kg/hr
+73000 kg/year
+Fixed charge rate (real)
+Enter fixed charge rate
+>
+Enter costs in $
+1.00
+0.00
+Variable operating cost
+0.098
+30 deg
+180 deg
+1
+Finance Parameter
+Open 3D shade calculator...
+System capacity
+0.0000 $/kWh
+Analysis period
+Inflation rate
+Capital recovery factor (CRF)
+0.083
+Project financing factor (PFF)
+1.127
+Construction financing factor (CFF)
+1.024
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+50.00
+26
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule Sched
+Annual cost during construction
+Nominal construction interest rate
+Value
+Total system collector area
+Rated system size
+1.709 kW
+Enter costs in $/kW
+2,000.00
+Scale draw profile to average daily usage
+Average daily hot water usage
+LCOE Calculator-
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+Value
+Sched
+User-defined collector-
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+2007026D
+-System Availability-
+Edit...
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+O Calculate fixed charge rate
+20 years
+2.5 %/year
+13 %/year
+60% of capital cost
+4 %/year
+28 %/year
+Collector area
+FRta
+FRUL
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 2.49
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+Glazed Flat-Plate 1.52
+Clared Clat Plato 272
+0.2 0..1
+2.98 m2
+1.709 kW
+IAM coefficient
+Test fluid Water
+Test flow
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+% of capital cost
+100 % of capital cost
+3.5 %/year
+0
+0
+Area IAM FRta FRUL Test Fluid Te
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4
+-0.... 0.725 3.24
+0.09 0.719 5.31 0
+0.09 0.719 5.31 0
+0.09 0.719 5.31 0
+-0.... 0.713 3.38 0
+3,418.06 $
+85.45 $
+2.98 m2
+0.045528 kg/s
+0711
+Fixed charge rate (FCR)
+0.00 $/kWh
+0.054
+250 kg/day
+0.689
+3.85 W/m2.C
+0.2
+0.098
+FCR = CRF PFF CFF (see below)
+.
+0.(
+0.(
+O.C
+0.(
+0.(
+0.(
+0.(Output
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF/CDF
+Metric
+Value
+Annual AC energy saved (year 1) 1,755 kWh
+Solar fraction (year 1)
+0.68
+Aux with solar (year 1)
+665.2 kWh
+Aux without solar (year 1)
+2,577.2 kWh
+Capacity factor (year 1)
+11.7%
+LCOE Levelized cost of energy
+23.95 €/kWh
+JOH
+5
+10
+15
+20
+50
+kWh
+100
+200
+150
+100
+50
+0
+Jan
+System energy
+Annual AC energy in Year 1 (kW)
+Day
+150
+Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+200
+Monthly AC Energy in Year 1
+27
+250
+300
+350
+0.809707
+0.724676
+0.639645
+0.554614
+0.469582
+0.384551
+0.29952
+0.214489
+0.129458
+0.0444268
+-0.0406043Select the Average daily hot water usage (300L)
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate>
+Parametrics Stochastic
+P50 / P90
+Macros
+SAM 2022.11.21
+File ✓
+Solar water, LCOE Calculator
+Location and Resource
+Solar Water Heating
+Financial Parameters
+Simulate >
++ Add untitled
+Parametrics
+P50 / P90
+Hot Water Draw
+Stochastic
+Macros
+System
+-Shading-
+Collector
+Hourly hot water draw profile
+Edit array...
+kg/hr
+Total annual hot water draw 91250.000000000 kg/year
+Shading losses
+Number of collectors
+O Choose from library
+Enter user-defined parameters
+Filter:
+Name
+Heliodyne Inc. Gobi 408 001
+Heliodyne Inc. Gobi 406 001
+Heliodyne Inc. Gobi 336 001
+Heliodyne Inc. Gobi 406 002
+Heliodyne Inc. Gobi 410 002
+Heliodyne Inc. Gobi 408 002
+Heliodyne Inc. Gobi 404 001
+Holiadung loc Cobi 110.012
+Working fluid Water
+Edit shading...
+Azimuth
+Tilt
+Name
+-Capital and Operating Costs-
+-Financial Assumptions-
+-Reference Values-
+Capital cost
+Fixed operating cost (annual)
+Enter costs in $
+1.00
+O Enter fixed charge rate
+Fixed charge rate (real)
+30 deg
+180 deg
+Variable operating cost
+0.098
+1
+0.00
+Finance Parameter
+System capacity
+Open 3D shade calculator...
+0.083
+1.127
+1.024
+0.0000 $/kWh
+Analysis period
+Inflation rate
+Internal rate of return (nominal)
+Project term debt
+Nominal debt interest rate
+Effective tax rate
+Depreciation schedule
+Annual cost during construction
+Nominal construction interest rate
+Capital recovery factor (CRF)
+Project financing factor (PFF)
+Construction financing factor (CFF)
+LCOE = (FCR CC + FOC)/ Annual Energy + VOC
+28
+Total system collector area
+Rated system size
+1.709 kW
+Enter costs in $/kW
+2,000.00
+Scale draw profile to average daily usage
+Average daily hot water usage
+50.00
+Value
+Sched
+2007026D
+LCOE Calculator
+The fixed-charge rate method of calculating the levelized cost of energy simplifies time-dependent calculations and is appropriate for market-level analysis
+such as for the NREL Annual Technology Baseline, or for very preliminary project analysis. The cash flow method of SAM's other financial models is more
+suitable for more detailed project analysis. See Help for details.
+Value
+Sched
+Diffuse sky model Isotropic
+Irradiance inputs Beam and Diffuse
+Albedo
+SRCC Number Type
+2007027C
+2007027B
+2007027A
+1981085G
+1981085D
+1981085C
+2007027E
+User-defined collector-
+-System Availability-
+Edit...
+Edit losses... Constant loss: 0.0 %
+Lifetime losses: None
+Custom periods: None
+O Calculate fixed charge rate
+20 years
+2.5 %/year
+13 %/year
+60% of capital cost
+4 %/year
+28
+%/year
+% of capital cost
+100 % of capital cost
+3.5 %/year
+Collector area
+FRta
+FRUL
+Glazed Flat-Plate 2.99
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 2.49
+Glazed Flat-Plate 2.5
+Glazed Flat-Plate 3.73
+Glazed Flat-Plate 3
+Glazed Flat-Plate 1.52
+IAM coefficient
+Test fluid Water
+Test flow
+Clazed Flat Plato 2.72
+Capital cost (CC)
+Fixed operating cost (FOC)
+Variable operating cost (VOC)
+WACC (for reference only)
+0.2 0..1
+2.98 m2
+1.709 kW
+0
+0
+Area IAM FRta FRUL Test Fluid Te
+-0.... 0.73 3.41 0
+-0.... 0.726 3.4
+-0.... 0.725 3.24
+0.09 0.719 5.31
+0.09 0.719 5.31
+0.09 0.719 5.31 0
+-0.... 0.713 3.38 0
+0
+0
+0
+=
+2.98 m2
+Fixed charge rate (FCR)
+3,418.06 $
+85.45 $
+0.054
+0.00 $/kWh
+300 kg/day
+0.689
+3.85 W/m2.C
+0.2
+0.045528 kg/s
+0711 2.02
+0.098
+FCR CRF PFF CFF (see below)
+0
+0.(
+0.(
+O.C
+0.(
+0.(
+0.(
+0.(Output
+Summary Data tables Graphs Time series Profiles Statistics Heat map PDF/CDF
+Metric
+Value
+Annual AC energy saved (year 1) 1,956 kWh
+Solar fraction (year 1)
+0.63
+Aux with solar (year 1)
+976.6 kWh
+Aux without solar (year 1)
+Capacity factor (year 1)
+LCOE Levelized cost of energy
+unoH
+0
+in
+5
+10
+15
+20
+3,092.7 kWh
+13.1%
+21.49 €/kWh
+50
+kWh
+100
+250
+200
+150
+100
+50
+0
+Annual AC energy in Year 1 (kW)
+Day
+Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec
+System energy
+150
+200
+Monthly AC Energy in Year 1
+29
+250
+300
+350
+0.971648
+0.869549
+0.76745
+0.66535
+0.563251
+0.461151
+0.359052
+0.256952
+0.154853
+0.0527534
+-0.0493461Discussion and Description in Brief
+The Levelized Cost of Electricity (LCOE), Capacity Factor, and Annual Energy
+Saved are key performance indicators in solar thermal systems. The trend of
+these parameters is dependent on the water demand of the system.
+LCOE is the total cost of producing energy over the system's lifetime, divided
+by the total energy produced. As water demand increases, the LCOE
+decreases due to economies of scale. This is because larger systems can
+produce more energy at a lower cost per unit, leading to a lower LCOE.
+Capacity factor is the ratio of actual energy produced by the system to the
+maximum possible energy production if the system were running at full
+capacity all the time. As water demand increases, the capacity factor
+typically decreases due to the system's inability to operate at full capacity for
+extended periods. This is because the system's energy production is
+dependent on the availability of sunlight, which can be limited in areas with
+high water demand.
+Annual Energy Saved is the total amount of energy produced by the system
+over a year. As water demand increases, the annual energy saved increases
+due to the increased use of the system.
+If the number of collectors is increased to 2 for a water demand of 300 1/day,
+the LCOE will decrease further due to increased energy production, while the
+capacity factor may increase due to the redundancy of having two collectors.
+The annual energy saved will also increase as the system will be able to
+produce more energy with two collectors instead of one. However, it is
+important to note that the increased cost of adding an additional collector
+may impact the overall LCOE.
+30Conclusion
+Based on the trends discussed above, it is clear that solar thermal
+systems can be a practical and cost-effective solution for meeting
+water demand in areas with abundant sunlight. As water demand
+increases, larger systems with multiple collectors may be
+necessary to meet the demand and improve system performance.
+However, it is important to carefully consider the cost-benefit
+analysis of adding additional collectors as the cost of the system
+may increase as well. Overall, solar thermal systems are a
+promising technology for meeting water demand sustainably and
+cost-effectively in areas with sufficient sunlight.
+31
