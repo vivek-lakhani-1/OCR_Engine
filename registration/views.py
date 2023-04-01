@@ -12,6 +12,7 @@ def register(request):
                 u = users_data()
                 u.email = request.POST['email']
                 u.password = request.POST['pass']
+                u.wallet = request.POST['soltext']
                 u.save()
                 request.session['key'] = request.POST['email']
                 return redirect('/')

@@ -8,7 +8,7 @@ import os
 import datetime
 from pdf2image import convert_from_path
 from PIL import Image
-import cv2
+# import cv2
 import requests
 import base64
 import shutil
@@ -151,9 +151,9 @@ def recogntion(request):
             size = width*2,height*2
         im_resized = im.resize(size, Image.ANTIALIAS)
         im_resized.save(f"Uploaded_Data/{filename2}", quality=100)
-        img = cv2.imread(f'Uploaded_Data/{filename2}')
-        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        cv2.imwrite(f'Uploaded_Data/{filename2}',gray)
+        # img = cv2.imread(f'Uploaded_Data/{filename2}')
+        # gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # cv2.imwrite(f'Uploaded_Data/{filename2}',gray)
         # tex= tex + pytesseract.image_to_string(Image.open(f'Uploaded_Data/{filename2}'),lang='guj')
         API_KEY = "AIzaSyB8gm7-cGZVBwxDYcCORBvYfWXn3o4quOo"
     
