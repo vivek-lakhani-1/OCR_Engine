@@ -860,6 +860,7 @@ input[type=submit]:hover {
   color: #fff;
 }
 
+
 /* Placeholder color */
 ::-webkit-input-placeholder {
   color: var(--primary-color2);
@@ -2108,7 +2109,7 @@ header.absolute {
 .preload-logo {
   
   width: 600px;
-padding-top: 50%;
+margin-top: 5% !important;
   height: 600px;
 
   z-index: 100;

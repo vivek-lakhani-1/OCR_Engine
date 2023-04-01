@@ -33,8 +33,10 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100%;
-    height: 100vh;
+    height: 150vh;
+    background-position: center;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
 }
 
 .dust-paarticle
@@ -136,7 +138,6 @@ a:focus {
 .btn-primary {
   background-color: #000000 !important;
   border-radius: 500px !important;
-  width: 15vw !important;
   transition: transform 1s ease 0s;
 
 }
@@ -189,7 +190,7 @@ a:focus {
 
 .authfy-login, 
 .authfy-panel-left .brand-col {
-  height: 500px;
+  height: 85vh;
 }
 .authfy-panel-left .brand-col {
   display: table;

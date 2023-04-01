@@ -39,7 +39,7 @@
                             <div id="site-header-inner">
                                 <div id="site-logo" class="clearfix">
                                     <div id="site-logo-inner">
-                                        <a href="{% url 'homepage' %}" rel="home" class="main-logo">
+                                        <a href="{% url 'home2' %}" rel="home" class="main-logo">
                                             <img id="logo_header" src="{% static 'assets/images/logo/logo_dark.png' %}"
                                                 alt="Image">
                                         </a>
@@ -49,7 +49,7 @@
                                     <nav id="main-nav" class="main-nav">
                                         <ul id="menu-primary-menu" class="menu">
                                             <li class="menu-item">
-                                                <a href="{% url 'homepage' %}">Home</a>
+                                                <a href="{% url 'home2' %}">Home</a>
                                             </li>
                                             <li class="menu-item\">
                                                 <a href="{% url 'scan' %}">Scan</a>
@@ -83,7 +83,7 @@
                                 <h4 class="heading">Drop Up A Message</h4>
                                 <!-- <p class="sub-heading">  </p> -->
                             </div>
-                            <form action="https://themesflat.com/html/binaseahtml/contact/contact-process.php"
+                            <form action="https://airform.io/chintanudani2000@gmail.com"
                                 method="post" id="commentform" class="comment-form">
                                 <fieldset class="name">
                                     <input type="text" id="name" placeholder="Your Full Name" class="tb-my-input"
@@ -93,14 +93,10 @@
                                     <input type="email" id="email" placeholder="Your Email Address" class="tb-my-input"
                                         name="email" tabindex="2" aria-required="true" required="">
                                 </fieldset>
-                                <div class="form-select" id="subject">
-                                    <select>
-                                        <option value="1">Select subject</option>
-                                        <option value="2">Select subject</option>
-                                        <option value="3">Select subject</option>
-                                    </select>
-                                    <i class="icon-fl-down"></i>
-                                </div>
+                                <fieldset class="email">
+                                    <input type="text" id="email" placeholder="Your Subject" class="tb-my-input"
+                                        name="subject" tabindex="2" aria-required="true" required="">
+                                </fieldset>
                                 <fieldset class="message">
                                     <textarea id="message" name="message" rows="4" placeholder="Message" tabindex="4"
                                         aria-required="true" required=""></textarea>
@@ -130,6 +126,27 @@
     <script src="{% static 'assets/js/shortcodes.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>
     <script src="{% static 'assets/js/switchmode.js' %}"></script>
+  
+
+
+    <script type='text/javascript'>
+
+        (function()
+        {
+          if( window.localStorage )
+          {
+            if( !localStorage.getItem('firstLoad') )
+            {
+              localStorage['firstLoad'] = true;
+              window.location.reload();
+            }  
+            else
+              localStorage.removeItem('firstLoad');
+          }
+        })();
+        
+        </script>
+
 </body>
 
 </html>

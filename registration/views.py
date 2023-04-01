@@ -32,14 +32,15 @@ def login(request):
             data = dict(data)
 
             if(data == {}):
-                
+                print("hello3")
                 return redirect('/register')
             else:
+                print("hello2")
                 pass
         except:
             if(data[0]['password'] == request.POST['pass']):
                 request.session['key'] = request.POST['email']
-                return redirect('/')
+                return redirect('/homepage')
             
-       
+
     return render(request,'login.html')

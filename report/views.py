@@ -1,21 +1,29 @@
 from django.shortcuts import render
 from recognition_app.models import gujrati_files
 def reportpage(request):
-    gj = gujrati_files.objects.filter(email = request.session.get('key', None)).values()
+    gj = list(gujrati_files.objects.filter(email = request.session.get('key', None)).values())
     date = []
     name = []
     filename = []
+    l = []
     for i in range(len(gj)):
-        date = gj[i]['time']
-        name = gj[i]['email']
-        image = gj[i]['image']
         
+        date.append(gj[i]['time'])
+        name.append(gj[i]['email'])
+        filename.append(gj[i]['image'])
+        
+        
+        
+
     
-    prm = zip(date,name,image)
+    prm = zip(date,name,filename)
+    
     
     print("---------------------------------------------------------")
+    
     data = {
         'pr':prm
     }
+    
     
     return render(request,'report.html',data)
