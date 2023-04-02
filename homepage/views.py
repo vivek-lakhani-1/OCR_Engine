@@ -1,10 +1,6 @@
 from django.shortcuts import render
 
-from requests import request
 from django.contrib.auth.decorators import login_required
-
-
-
 @login_required(login_url='login')
 
 def home(request):

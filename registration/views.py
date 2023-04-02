@@ -2,6 +2,7 @@ from django.shortcuts import render
 from registration.models import users_data
 from django.shortcuts import redirect
 
+
 def register(request):
     if(request.method=="POST"):
         
@@ -27,6 +28,7 @@ def register(request):
 
     
 def login(request):
+
     if(request.method=="POST"):
         try:
             data = users_data.objects.filter(email=request.POST['email']).values()
@@ -41,6 +43,7 @@ def login(request):
         except:
             if(data[0]['password'] == request.POST['pass']):
                 request.session['key'] = request.POST['email']
+                
                 return redirect('/homepage')
             
 
