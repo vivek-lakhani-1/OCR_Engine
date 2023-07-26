@@ -33,8 +33,7 @@ PyAudio
 pytesseract
 
 pytz
-pywin32
-pywinpty
+
 
 
 requests
